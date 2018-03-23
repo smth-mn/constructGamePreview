@@ -11,10 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">episode 1.1</layout>
-        <layout order="2">mainMenu</layout>
-        <layout order="4">episode 1.2</layout>
-        <event-sheet active="1" order="1">episode1p1Events</event-sheet>
-        <event-sheet order="3">mainMenuEvents</event-sheet>
+        <layout active="1" order="2">playMap</layout>
+        <event-sheet order="1">episode1p1Events</event-sheet>
+        <event-sheet order="3">episode1p2Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,15 +23,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1">
         <family expanded="0" name="buttons" />
-        <family expanded="0" name="dialogueDoctorWrapper" />
-        <family expanded="0" name="dialoguePeopleWrapper" />
+        <family expanded="1" name="dialogueDoctorWrapper" />
+        <family expanded="1" name="dialoguePeopleWrapper" />
+        <family expanded="0" name="sortable" />
+        <family expanded="1" name="dialogueKuharkaWrapper" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/menuObjects/" />
         <folder expanded="1" path="object-folder/episodesObjects/" />
-        <folder expanded="1" path="object-folder/episodesObjects/episode1p1/" />
-        <folder expanded="1" path="object-folder/episodesObjects/episode1p1/dialogue/" />
+        <folder expanded="1" path="object-folder/episodesObjects/playmap/" />
+        <folder expanded="0" path="object-folder/episodesObjects/dialogue/" />
+        <folder expanded="1" path="object-folder/episodesObjects/dialogue/textBoxes/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -45,13 +47,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/settingsButton/" />
         <folder expanded="1" path="animation-folder/startButton/" />
         <folder expanded="1" path="animation-folder/portrait/" />
-        <folder expanded="1" path="animation-folder/dialogueDoctorPhraseBox/" />
-        <folder expanded="1" path="animation-folder/dialogueDoctorPortraits/" />
-        <folder expanded="1" path="animation-folder/dialoguePeoplePhraseBox/" />
-        <folder expanded="1" path="animation-folder/dialoguePeoplePortrait/" />
-        <folder expanded="1" path="animation-folder/ground/" />
-        <folder expanded="1" path="animation-folder/horizontalWall/" />
         <folder expanded="1" path="animation-folder/mainHero/" />
+        <folder expanded="1" path="animation-folder/people/" />
+        <folder expanded="1" path="animation-folder/Bed/" />
+        <folder expanded="1" path="animation-folder/kuharka/" />
+        <folder expanded="1" path="animation-folder/ground/" />
         <folder expanded="1" path="animation-folder/verticalWall/" />
+        <folder expanded="1" path="animation-folder/horizontalWall/" />
+        <folder expanded="1" path="animation-folder/dialoguePhraseBox1/" />
+        <folder expanded="1" path="animation-folder/dialoguePhraseBox3/" />
+        <folder expanded="1" path="animation-folder/dialoguePhraseBox4/" />
+        <folder expanded="1" path="animation-folder/dialoguePhraseBox5/" />
+        <folder expanded="1" path="animation-folder/dialogueDoctorPortraits/" />
+        <folder expanded="1" path="animation-folder/dialoguePeoplePortrait/" />
+        <folder expanded="1" path="animation-folder/dialogueKuharkaPortrait/" />
+        <folder expanded="1" path="animation-folder/border/" />
     </folders-expanded>
 </c2uistate>

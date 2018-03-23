@@ -3,53 +3,16 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>episode1p1Events</name>
     <events>
-        <variable constant="0" name="dialogueStep" sid="999728808615361" static="0" type="number">-1</variable>
-        <event-block sid="103905920506426">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="279270679976341" type="horizontalWall">
-                    <param id="0" name="Object">mainHero</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Set opacity" sid="811925012818915" type="horizontalWall">
-                    <param id="0" name="Opacity">50</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="514322339650496">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="321626896065468" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="ScrollTo" id="1" name="Set enabled" sid="629843052087648" type="mainHero">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-16" name="Wait" sid="944423662761562" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="592855105782553" type="System">
-                    <param id="0" name="Layer">1</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="634068670542781" type="System">
-                    <param id="0" name="Variable">dialogueStep</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <variable constant="0" name="dialogueStep1p1" sid="999728808615361" static="0" type="number">-1</variable>
         <event-block sid="308451627591893">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="532359811364596" type="System">
-                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="0" name="Variable">dialogueStep1p1</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-18" name="Set layer opacity" sid="252403001548037" type="System">
-                    <param id="0" name="Layer">0</param>
-                    <param id="1" name="Opacity">50</param>
-                </action>
                 <action id="-4" name="Set layer visible" sid="238626208632814" type="System">
                     <param id="0" name="Layer">1</param>
                     <param id="1" name="Visibility">1</param>
@@ -65,7 +28,7 @@
         <event-block sid="215006750117589">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="330033803106606" type="System">
-                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="0" name="Variable">dialogueStep1p1</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -82,7 +45,7 @@
         <event-block sid="119513978417821">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="889039852846764" type="System">
-                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="0" name="Variable">dialogueStep1p1</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -102,6 +65,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="741623139963752">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="475729658828517" type="System">
+                    <param id="0" name="Variable">dialogueStep1p1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="275024895346463" type="System">
+                    <param id="0" name="Layout">playMap</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="899949507690291">
             <conditions>
                 <condition id="3" name="On key released" sid="982139351164143" type="Keyboard">
@@ -110,8 +87,25 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="449934306567673" type="System">
-                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="0" name="Variable">dialogueStep1p1</param>
                     <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="283190221956382">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="732299910471671" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="772230058014678" type="sortable">
+                    <param id="0" name="Instance variable">zInd</param>
+                    <param id="1" name="Value">sortable.Y</param>
+                </action>
+                <action id="-50" name="Sort Z order" sid="731622906702707" type="System">
+                    <param id="0" name="Object">sortable</param>
+                    <param id="1" name="Instance variable">sortable|zInd</param>
                 </action>
             </actions>
         </event-block>

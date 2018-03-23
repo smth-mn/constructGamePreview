@@ -2,5 +2,140 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>episode1p2Events</name>
-    <events />
+    <events>
+        <variable constant="0" name="dialogueStep1p2" sid="199910987823895" static="0" type="number">-1</variable>
+        <event-block sid="471943960939667">
+            <conditions>
+                <condition id="3" name="On key released" sid="916241236062954" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="484344057920642" type="System">
+                    <param id="0" name="Variable">dialogueStep1p2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="575892317893513">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="844428596675889" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="123330818290432" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="651576483764397" type="System">
+                    <param id="0" name="Variable">dialogueStep1p2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="494649676548365">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="487684203395834" type="System">
+                    <param id="0" name="Variable">dialogueStep1p2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="739665961085940" type="mainHero">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="299069460559356" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="350664848795349" type="kuharka">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="171283372629379">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="560044659938570" type="System">
+                    <param id="0" name="Variable">dialogueStep1p2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="470275868951415" type="dialogueDoctorWrapper">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="892929066448739" type="dialogueDoctorPhraseText">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="621610109506210" type="dialogueKuharkaWrapper">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="254719452543260" type="dialogueKuharkaPhraseText">
+                    <param id="0" name="Text">&quot;я тебе как раз воду горячую принесла. но давай реще&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="807804298121455">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="676648562696008" type="System">
+                    <param id="0" name="Variable">dialogueStep1p2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="890088792790059" type="dialogueKuharkaWrapper">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="665992196821805" type="dialogueKuharkaPhraseText">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="505820563151980" type="dialogueDoctorWrapper">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="823972521892029" type="dialogueDoctorPhraseText">
+                    <param id="0" name="Text">&quot;ох, и правда. ну ок, ща, побреюсь только&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="762827240342071">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="252596670877281" type="System">
+                    <param id="0" name="Variable">dialogueStep1p2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="194260792434079" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="520060903020054" type="dialogueKuharkaPortrait">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="278286332923086" type="dialoguePhraseBox3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="510504060289463" type="dialogueKuharkaPhraseText">
+                    <param id="0" name="Text">&quot;ну давай, вставай, чувак. люди сами себя не вылечат&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="259570411504883">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="745937615757253" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="511207765726450" type="sortable">
+                    <param id="0" name="Instance variable">zInd</param>
+                    <param id="1" name="Value">sortable.Y</param>
+                </action>
+                <action id="-50" name="Sort Z order" sid="231183612813717" type="System">
+                    <param id="0" name="Object">sortable</param>
+                    <param id="1" name="Instance variable">sortable|zInd</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
