@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>episode1p1Events</name>
+    <events>
+        <variable constant="0" name="dialogueStep" sid="999728808615361" static="0" type="number">-1</variable>
+        <event-block sid="103905920506426">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="279270679976341" type="horizontalWall">
+                    <param id="0" name="Object">mainHero</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="811925012818915" type="horizontalWall">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514322339650496">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="321626896065468" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="629843052087648" type="mainHero">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="944423662761562" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="592855105782553" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="634068670542781" type="System">
+                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="308451627591893">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="532359811364596" type="System">
+                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="252403001548037" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Opacity">50</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="238626208632814" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="913164227906328" type="dialogueDoctorPhraseText">
+                    <param id="0" name="Text">&quot;hui!&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="707246423447525" type="dialogueDoctorWrapper">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="215006750117589">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="330033803106606" type="System">
+                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="402656394360573" type="dialogueDoctorPortraits">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="0" name="Set text" sid="811854462888647" type="dialogueDoctorPhraseText">
+                    <param id="0" name="Text">&quot;ладно, я большой молодец, отлично закончил универ и вообще красавчик&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="119513978417821">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="889039852846764" type="System">
+                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="214535268340322" type="dialogueDoctorWrapper">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="753460279545266" type="dialogueDoctorPhraseText">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="987036144668863" type="dialoguePeopleWrapper">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="530104628858785" type="dialoguePeoplePhraseText">
+                    <param id="0" name="Text">&quot;Умница!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="899949507690291">
+            <conditions>
+                <condition id="3" name="On key released" sid="982139351164143" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="449934306567673" type="System">
+                    <param id="0" name="Variable">dialogueStep</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
